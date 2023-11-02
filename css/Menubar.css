@@ -1,0 +1,7 @@
+.sidepanel {
+    /* transition: 0.5s; */
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
+
+    /* transition: all 800ms cubic-bezier(0.40, -0.45, 0.165, 1.55) !important; */
+
+}

@@ -1,0 +1,118 @@
+/* Custom styles for responsiveness */
+.thumbnails-container {
+    /* display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    max-width: 800px; 
+    margin: 0 auto;  */
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+  }
+  
+  /* Style for each thumbnail */
+  .thumbnail {
+    position: relative; /* Enable positioning for the parent thumbnail */
+    margin-bottom: 20px; /* Add some space between thumbnails */
+  }
+  
+  /* Style for thumbnail images */
+  .thumbnail img {
+    width: 100%; /* Make the images fill the available width of the thumbnail */
+    height: auto;
+    cursor: pointer;
+  }
+
+  /* Style for the thumbnail title */
+.thumbnail-ttitle {
+    position: absolute;
+    bottom: 8px; /* Distance from the bottom */
+    left: 8px; /* Distance from the left */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better visibility */
+    padding: 4px 8px;
+    border-radius: 4px;
+
+    color: #FFF;
+text-align: center;
+font-family: Bebas Neue;
+font-size: 1.2rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 4.8px;
+  }
+  
+  /* Style for the "View Full Image" button */
+  .view-button {
+    position: absolute; /* Position the button absolutely inside the parent thumbnail */
+    bottom: 8px; /* Distance from the bottom */
+    right: 8px; /* Distance from the right */
+    background-color: transparent;
+  
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+text-align: center;
+font-family: Quicksand;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  }
+  
+  .view-button:hover {
+    background-color: #0056b3;
+    border: 1px solid #0056b3;
+
+  }
+
+ /* Style for the "i" button */
+.info-button {
+    position: absolute;
+    top: 3px; /* Distance from the top */
+    right: 2px; /* Distance from the right */
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .view-button-mobile {
+    display: none; /* Hide the icon by default for larger screens */
+  }
+
+  @media only screen and (max-width: 768px) {
+    .thumbnails-container {
+      flex-wrap: wrap; 
+      justify-content: center; 
+    }
+
+    .view-button{
+        display: none;
+    }
+    /* Show the "View Full Image" icon for mobile devices */
+  .view-button-mobile {
+    display: block;
+    position: absolute;
+    bottom: 8px; /* Distance from the bottom */
+    right: 8px; /* Distance from the right */
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+    padding: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  }
+  
+  /*  */
+  /*  */
+
+
+
